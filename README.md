@@ -1,4 +1,4 @@
-# IttenColor
+# Itten color
 
 The Itten Color Circle is a 12-hue color wheel developed by Bauhaus master Johannes Itten, organizing colors into primaries (red, yellow, blue), secondaries (orange, green, violet), and tertiaries, demonstrating relationships and harmonies for artists and designers. It's a foundational tool for understanding color mixing, contrast (warm/cool, complementary), and creating balanced palettes, showing how all colors derive from basic pigments.
 
@@ -20,4 +20,4 @@ The Itten Color Circle is a 12-hue color wheel developed by Bauhaus master Johan
 ## References
 
 - [Wiki](https://en.wikipedia.org/wiki/Color_wheel)
-- [Itten color theor:y](http://www.huevaluechroma.com/113.php)
+- [Itten color theory](http://www.huevaluechroma.com/113.php)
