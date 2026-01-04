@@ -1,0 +1,38 @@
+{
+  "name": "itten-color",
+  "version": "1.0.0",
+  "description": "",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "author": "Marat Zimnurov",
+  "keywords": [
+    "colors",
+    "itten",
+    "theory of color",
+    "how to find itten color"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/the-homeless-god/itten-color.git"
+  },
+  "homepage": "https://github.com/the-homeless-god/itten-color",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "devDependencies": {
+    "prettier": "^3.7.4",
+    "rollup": "^4.54.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "tslint": "^5.20.1",
+    "typescript": "^5.9.3"
+  }
+}
