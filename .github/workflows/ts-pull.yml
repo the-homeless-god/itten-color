@@ -1,6 +1,6 @@
 name: typescript-pr
 on:
-  pull:
+  pull_request:
     branches:
       - master
 jobs:
