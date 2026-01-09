@@ -2,6 +2,7 @@
   "extends": ["tslint:recommended", "tslint-config-prettier"],
   "rules": {
     "no-console": false,
-    "no-empty-interface": false
+    "no-empty-interface": false,
+    "interface-over-type-literal": false
   }
 }
