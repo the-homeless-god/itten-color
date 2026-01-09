@@ -1,0 +1,20 @@
+name: npm-publish
+on:
+  pull:
+    branches:
+      - master
+jobs:
+  npm-build:
+    name: npm-publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "24.x"
+          registry-url: "https://registry.npmjs.org"
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run format
+      - run: npm run build
