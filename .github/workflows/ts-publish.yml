@@ -7,6 +7,9 @@ jobs:
   npm-publish:
     name: npm-publish
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: solutions/ts
     timeout-minutes: 10
     permissions:
       contents: write

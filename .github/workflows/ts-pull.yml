@@ -8,6 +8,9 @@ jobs:
     name: npm-publish
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: solutions/ts
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
