@@ -20,11 +20,10 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "24.x"
-          registry-url: "https://registry.npmjs.org"
       - run: npm install
-      - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
+      - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.REGISTRY_TOKEN }}" > ~/.npmrc
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
       - run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
