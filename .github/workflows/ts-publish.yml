@@ -21,9 +21,9 @@ jobs:
         with:
           node-version: "24.x"
       - run: npm install
-      - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.REGISTRY_TOKEN }}" > ~/.npmrc
+      - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.REGISTRY_TOKEN }}" > ~/.npmrc
         env:
           NODE_AUTH_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
-      - run: npm publish --access public
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.REGISTRY_TOKEN }}

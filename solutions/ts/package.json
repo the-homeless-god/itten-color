@@ -37,9 +37,5 @@
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^5.9.3",
     "vitest": "^4.0.17"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com",
-    "access": "public"
   }
 }
