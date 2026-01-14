@@ -1,6 +1,6 @@
 {
-  "name": "@the-homeless-god/itten-color",
-  "version": "1.0.2",
+  "name": "itten-color",
+  "version": "1.0.3",
   "description": "",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
